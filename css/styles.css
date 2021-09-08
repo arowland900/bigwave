@@ -55,7 +55,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 90%;
-    min-width: 450px;
+    /* min-width: 450px; */
     z-index: 0;
 }
 
