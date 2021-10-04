@@ -3,6 +3,16 @@
     font-family: 'EB Garamond', serif;
 }
 
+#header {
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+}
+
+#footer {
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+}
+
 h1 {
     color: whitesmoke;
     text-align: center;
