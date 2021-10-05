@@ -4,10 +4,15 @@ let img = document.querySelector('img')
 
 let fProjexx = document.querySelector('#fullProjexx')
 let mProjexx = document.querySelector('#miniProjexx')
+let miniP = document.querySelector('#miniP')
+
 let fSteez = document.querySelector('#fullSteez')
 let mSteez = document.querySelector('#miniSteez')
+let miniS = document.querySelector('#miniS')
+
 let fPaul = document.querySelector('#fullPaul')
 let mPaul = document.querySelector('#miniPaul')
+let miniPA = document.querySelector('#miniPA')
 
 let one = document.getElementById('one')
 let two = document.getElementById('two')
@@ -20,29 +25,40 @@ fSteez.addEventListener('click', swap1)
 fPaul.addEventListener('click', swap2)
 
 function swap() {
-    if (sections[0])  fadeToggle(fProjexx, mProjexx, 0)
+    if (sections[0]) fadeToggle(fProjexx, mProjexx, 0)
     else fadeToggle(mProjexx, fProjexx, 0)
 }
 function swap1() {
-    if (sections[1])  fadeToggle(fSteez, mSteez, 1)
+    if (sections[1]) fadeToggle(fSteez, mSteez, 1)
     else fadeToggle(mSteez, fSteez, 1)
 }
 function swap2() {
-    if (sections[2])  fadeToggle(fPaul, mPaul, 2)
+    if (sections[2]) fadeToggle(fPaul, mPaul, 2)
     else fadeToggle(mPaul, fPaul, 2)
 }
 
 function fadeToggle(a, b, c) {
-    let s;
-    if(c == 0) s = swap
-    else if(c == 1) s = swap1
-    else if(c == 2) s = swap2
-    $(a).fadeOut(500, function () {
-        a.removeEventListener('click', s)
-        $(b).fadeIn(500, function () {
-            b.addEventListener('click', s)
+    let s, y;
+    if (c == 0) { s = swap; y = miniP }
+    else if (c == 1) { s = swap1; y = miniS }
+    else if (c == 2) { s = swap2; y = miniPA }
+
+    if (sections[c]) {
+        $(a).fadeOut(500, function () {
+            a.removeEventListener('click', s)
+            $(b).fadeIn(500, function () {
+                y.addEventListener('click', s)
+            })
         })
-    })
+    } else {
+        $(a).fadeOut(500, function () {
+            y.removeEventListener('click', s)
+            $(b).fadeIn(500, function () {
+                b.addEventListener('click', s)
+            })
+        })
+    }
+
     sections[c] = !sections[c]
 }
 
