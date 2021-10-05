@@ -42,11 +42,13 @@ html, body {
 #header {
     padding-top: 36vh;
     padding-bottom: 36vh;
+    /* z-index: -1; */
 }
 
 #footer {
     padding-top: 40vh;
     padding-bottom: 40vh;
+    /* z-index: -1; */
 }
 
 img:hover {
@@ -109,7 +111,8 @@ a:hover {
     width: 80%;
     text-align: center;
     /* min-width: 450px; */
-    z-index: 0;
+    z-index: 1;
+    margin-bottom: 20vh !important;
 }
 
 
@@ -223,6 +226,12 @@ section {
     }
     #paully {
         font-size: 4vw;
+    }
+}
+
+@media only screen and (max-height: 540px) {
+    section {
+        min-height: calc(50px + 120vh);
     }
 }
 
