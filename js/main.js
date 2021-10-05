@@ -1,6 +1,7 @@
 // cached elements
 let h1 = document.querySelector('h1')
 let img = document.querySelector('img')
+let body = document.querySelector('body')
 
 let fProjexx = document.querySelector('#fullProjexx')
 let mProjexx = document.querySelector('#miniProjexx')
@@ -65,8 +66,8 @@ function fadeToggle(a, b, c) {
 
 
 // function init() {
-//     body.style.display = 'none'
-//     $(body).fadeIn(3000)
+body.style.display = 'none'
+$(body).fadeIn(4000)
 // }
 
 // // call functions here
