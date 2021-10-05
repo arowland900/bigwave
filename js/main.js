@@ -1,60 +1,54 @@
 // cached elements
-var h1 = document.querySelector('h1')
-var img = document.querySelector('img')
+let h1 = document.querySelector('h1')
+let img = document.querySelector('img')
 
-var music = document.getElementById('music')
-var store = document.getElementById('store')
-var contact = document.getElementById('contact')
-var about = document.getElementById('about')
+let fProjexx = document.querySelector('#fullProjexx')
+let mProjexx = document.querySelector('#miniProjexx')
+let fSteez = document.querySelector('#fullSteez')
+let mSteez = document.querySelector('#miniSteez')
+let fPaul = document.querySelector('#fullPaul')
+let mPaul = document.querySelector('#miniPaul')
 
-var musLink = document.getElementById('musLink')
-var strLink = document.getElementById('strLink')
-var conLink = document.getElementById('conLink')
-var abtLink = document.getElementById('abtLink')
+let one = document.getElementById('one')
+let two = document.getElementById('two')
+let three = document.getElementById('three')
 
-// event listeners
-h1.addEventListener('click', loadHome)
-abtLink.addEventListener('click', loadAbout)
-conLink.addEventListener('click', loadContact)
-musLink.addEventListener('click', loadMusic)
-strLink.addEventListener('click', loadStore)
+let sections = [true, true, true]
+
+one.addEventListener('click', swap)
+
+function swap() {
+    if (sections[0])  fadeToggle(fProjexx, mProjexx, 0)
+    else fadeToggle(mProjexx, fProjexx, 0)
+}
+
+function fadeToggle(a, b, c) {
+    $(a).fadeOut(500, function () {
+        one.removeEventListener('click', swap)
+        $(b).fadeIn(500, function () {
+            one.addEventListener('click', swap)
+        })
+    })
+    sections[c] = !sections[c]
+}
+
+
+
+function init() {
+    body.style.display = 'none'
+    $(body).fadeIn(3000)
+}
+
 
 // functions
-function loadHome(){
-    img.setAttribute('style', 'display: block');
-    about.setAttribute('style', 'display: none');
-    contact.setAttribute('style', 'display: none');
-    music.setAttribute('style', 'display: none');
-    store.setAttribute('style', 'display: none');
-}
-function loadAbout(){
-    img.setAttribute('style', 'display: none');
-    about.setAttribute('style', 'display: block');
-    contact.setAttribute('style', 'display: none');
-    music.setAttribute('style', 'display: none');
-    store.setAttribute('style', 'display: none');
-}
-function loadContact(){
-    img.setAttribute('style', 'display: none');
-    about.setAttribute('style', 'display: none');
-    contact.setAttribute('style', 'display: block');
-    music.setAttribute('style', 'display: none');
-    store.setAttribute('style', 'display: none');
-}
-function loadMusic(){
-    img.setAttribute('style', 'display: none');
-    about.setAttribute('style', 'display: none');
-    contact.setAttribute('style', 'display: none');
-    store.setAttribute('style', 'display: none');
-    music.setAttribute('style', 'display: block');
-}
-function loadStore(){
-    img.setAttribute('style', 'display: block');
-    about.setAttribute('style', 'display: none');
-    contact.setAttribute('style', 'display: none');
-    music.setAttribute('style', 'display: none');
-    store.setAttribute('style', 'display: block');
-}
+// function loadHome(){
+//     img.setAttribute('style', 'display: block');
+//     about.setAttribute('style', 'display: none');
+//     contact.setAttribute('style', 'display: none');
+//     music.setAttribute('style', 'display: none');
+//     store.setAttribute('style', 'display: none');
+// }
+
 
 // on page load
-loadHome()
+// loadHome()
