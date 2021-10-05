@@ -34,10 +34,13 @@ function fadeToggle(a, b, c) {
 
 
 
-function init() {
-    body.style.display = 'none'
-    $(body).fadeIn(3000)
-}
+// function init() {
+//     body.style.display = 'none'
+//     $(body).fadeIn(3000)
+// }
+
+// // call functions here
+// init()
 
 
 // functions

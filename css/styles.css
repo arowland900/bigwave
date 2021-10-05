@@ -1,6 +1,17 @@
 * {
     background-color: black;
     font-family: 'EB Garamond', serif;
+    padding: 0;
+}
+
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.artistName {
+    color: white
 }
 
 #header {
@@ -9,56 +20,29 @@
 }
 
 #footer {
-    padding-top: 36vh;
-    padding-bottom: 36vh;
+    padding-top: 40vh;
+    padding-bottom: 40vh;
 }
 
-h1 {
-    color: whitesmoke;
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    font-size: 4.5em;
-    -webkit-animation: colorchange 25s infinite alternate;
-    animation-delay: 2s;
-    font-style: italic;
-}
 
 section:hover {
     cursor: pointer;
 }
 
 section img {
-    height: 90vh;
-    margin: 0 -100% 100% 0;
-    width: 177.777%;
-}
-section div {
-    height: 90vh;
+    height: 95vh;
     margin: 0 -100% 100% 0;
     width: 177.777%;
 }
 
-nav {
-    display: block;
+.mini {
+    /* height: 30vh; */
     margin-left: auto;
     margin-right: auto;
-    text-align: center;
-    margin-top: -40px;
-    margin-bottom: 8px;
-}
-
-h2 {
-    display: inline-block;
-    text-align: center;
-    color: whitesmoke;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-}
-
-h2:hover {
-    color: rgb(116, 116, 214);
-    cursor: pointer;
+    max-width: 150px; 
+    min-width: 300px;
+    max-height: 400px;
+    /* tex */
 }
 
 img {
@@ -75,7 +59,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
+    width: 100vw;
     /* min-width: 450px; */
     z-index: 0;
 }
@@ -85,18 +69,9 @@ img {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
+    text-align: center;
     /* min-width: 450px; */
     z-index: 0;
-}
-
-a:link {
-    text-decoration: none;
-    color: whitesmoke;
-}
-
-a:visited {
-    text-decoration: none;
-    color: whitesmoke;
 }
 
 a:hover {
@@ -108,84 +83,25 @@ div {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 33%;
-    min-width: 500px;
+    /* width: 33%;
+    min-width: 500px; */
 }
 
-p {
-    display: inline-block;
-    text-align: center;
-    color: whitesmoke;
-    font-size: 30px;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
-}
+
 
 section {
-    position: relative;
+    /* position: relative; */
     text-align: center;
-    max-height: 90vh;
-    padding-top: 5vh;
-    padding-bottom: 5vh;
+    max-height: 98vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
     overflow: hidden;
     width: 100vw;
     margin: 0;
+    min-height: 98vh;
+    max-height: 98vh;
 }
 
-#store {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 33%;
-    min-width: 500px;
-}
-
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#strLink:hover {
-    text-decoration: line-through;
-}
-
-@-webkit-keyframes colorchange {
-    0% {
-        color: white;
-    }
-    10% {
-        color: blue
-    }
-    20% {
-        color: white
-    }
-    30% {
-        color: blue
-    }
-    40% {
-        color: white
-    }
-    50% {
-        color: blue;
-    }
-    60% {
-        color: white
-    }
-    70% {
-        color: blue
-    }
-    80% {
-        color: white
-    }
-    90% {
-        color: blue
-    }
-    100% {
-        color: white
-    }
-}
 
 /* 768px is a common "breakpoint" width for tablets */
 
@@ -209,41 +125,30 @@ section {
         min-width: 340px;
         max-width: 1200px;
     }
-    p {
-        display: inline-block;
-        text-align: center;
-        color: whitesmoke;
-        font-size: 30px;
-        margin-left: 0.5vw;
-        margin-right: 0.5vw;
-    }
+
     #header {
         padding-top: 38vh;
         padding-bottom: 38vh;
     }
     #footer {
-        padding-top: 38vh;
-        padding-bottom: 38vh;
+        padding-top: 41vh;
+        padding-bottom: 41vh;
     }
     section {
-        min-height: 90vh;
-        max-height: 90vh;
-        /* width: 90vw; */
+        min-height: 98vh;
+        max-height: 98vh;
+        width: 100vw;
         overflow: hidden;
     }
     section img {
-        height: 90vh;
+        height: 98vh;
         margin: 0 -100% 100% 0;
-        width: 177.777%;
+        /* width: 177.777%; */
     }
-    section div {
-        height: 90vh;
-        margin: 0 -100% 100% 0;
-        width: 177.777%;
-    }
+
 }
 
-@media only screen and (max-width: 450px) {
+/* @media only screen and (max-width: 450px) {
     h1 {
         color: whitesmoke;
         text-align: center;
@@ -306,4 +211,4 @@ section {
     h3, p {
         font-size: 18px;
     }
-}
+} */
