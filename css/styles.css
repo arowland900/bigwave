@@ -1,8 +1,12 @@
+
+
 * {
-    background-color: #272727;
+    /* background-color: #272727; */
+    background-color: black;
     /* font-family: 'EB Garamond', serif; */
     font-family: 'Pinyon Script', cursive;
     /* font-family: 'Petit Formal Script', cursive; */
+    /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Pinyon Script', cursive; */
     /* font-family: 'Italianno', cursive; */
     padding: 0;
@@ -41,17 +45,17 @@ html, body {
 }
 
 #header {
-    /* padding-top: 36vh; */
-    padding-top: 25vh;
-    padding-bottom: 25vh;
-    /* padding-bottom: 36vh; */
+    padding-top: 36vh;
+    padding-bottom: 36vh;
+    /* padding-top: 25vh;
+    padding-bottom: 25vh; */
     /* z-index: -1; */
 }
 
 #footer {
-    margin-top: -2vh;
-    /* padding-top: 40vh; */
-    /* padding-bottom: 40vh; */
+    /* margin-top: -2vh; */
+    padding-top: 40vh;
+    padding-bottom: 40vh;
     /* padding-bottom: 25vh; */
     /* z-index: -1; */
 }
@@ -94,7 +98,8 @@ img {
     z-index: 0;
     object-fit: cover;
 }
-a{
+
+a {
     color: whitesmoke;
 }
 
@@ -102,7 +107,6 @@ a:hover {
     color: #EE1E3A;
     cursor: pointer;
 }
-
 
 .artist {
     display: block;
@@ -123,8 +127,6 @@ a:hover {
     z-index: 1;
     margin-bottom: 20vh !important;
 }
-
-
 
 div {
     display: block;
@@ -192,10 +194,10 @@ section {
         max-width: 1200px;
     }
     #header {
-        /* padding-top: 38vh;
-        padding-bottom: 38vh; */
-        padding-top: 33vh;
-        padding-bottom: 33vh;
+        padding-top: 38vh;
+        padding-bottom: 38vh;
+        /* padding-top: 33vh;
+        padding-bottom: 33vh; */
     }
     #footer {
         padding-top: 41vh;
