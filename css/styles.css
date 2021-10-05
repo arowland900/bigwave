@@ -22,7 +22,7 @@ html, body {
 }
 
 .genre {
-    color: whitesmoke
+    color: whitesmoke;
     text-align: center;
     font-size: 40px;
     display: block;
@@ -84,7 +84,7 @@ img {
     object-fit: cover;
 }
 a{
-    color: whitesmoke
+    color: whitesmoke;
 }
 
 a:hover {
@@ -136,17 +136,20 @@ section {
 }
 
 .links {
-    color: whitesmoke
-    font-size: 50px;
+    color: whitesmoke;
+    font-size: 45px;
 }
 
 #paully {
     font-size: 45px;
 }
 
-@media only screen and (max-width: 925px) {
+@media only screen and (max-width: 1000px) {
     #paully {
         font-size: 4.5vw;
+    }
+    .links {
+        font-size: 5vw;
     }
 }
 
@@ -160,7 +163,7 @@ section {
         margin-right: 2px;
         font-size: calc(40px + 3vw);
         min-width: 300px;
-        -webkit-animation: colorchange 25s infinite alternate;
+        /* -webkit-animation: colorchange 25s infinite alternate; */
         animation-delay: 2s;
         font-style: italic;
     }
@@ -212,14 +215,14 @@ section {
         /* width: 66%; */
     }
     .links {
-        font-size: 6vw;
+        font-size: 5vw;
     }
     #baker {
-        font-size: 5.5vw;
+        font-size: 5vw;
         /* width: 66%; */
     }
     #paully {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 }
 
