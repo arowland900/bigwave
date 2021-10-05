@@ -192,10 +192,10 @@ section {
     }
     #header {
         padding-top: 38vh;
-        padding-bottom: 38vh;
+        /* padding-bottom: 38vh; */
     }
     #footer {
-        padding-top: 41vh;
+        /* padding-top: 41vh; */
         padding-bottom: 41vh;
     }
     section {
