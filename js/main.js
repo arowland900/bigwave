@@ -15,18 +15,32 @@ let three = document.getElementById('three')
 
 let sections = [true, true, true]
 
-one.addEventListener('click', swap)
+fProjexx.addEventListener('click', swap)
+fSteez.addEventListener('click', swap1)
+fPaul.addEventListener('click', swap2)
 
 function swap() {
     if (sections[0])  fadeToggle(fProjexx, mProjexx, 0)
     else fadeToggle(mProjexx, fProjexx, 0)
 }
+function swap1() {
+    if (sections[1])  fadeToggle(fSteez, mSteez, 1)
+    else fadeToggle(mSteez, fSteez, 1)
+}
+function swap2() {
+    if (sections[2])  fadeToggle(fPaul, mPaul, 2)
+    else fadeToggle(mPaul, fPaul, 2)
+}
 
 function fadeToggle(a, b, c) {
+    let s;
+    if(c == 0) s = swap
+    else if(c == 1) s = swap1
+    else if(c == 2) s = swap2
     $(a).fadeOut(500, function () {
-        one.removeEventListener('click', swap)
+        a.removeEventListener('click', s)
         $(b).fadeIn(500, function () {
-            one.addEventListener('click', swap)
+            b.addEventListener('click', s)
         })
     })
     sections[c] = !sections[c]

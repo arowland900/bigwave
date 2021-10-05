@@ -4,7 +4,6 @@
     padding: 0;
 }
 
-
 html, body {
     max-width: 100%;
     overflow-x: hidden;
@@ -13,6 +12,8 @@ html, body {
 .artistName {
     color: white;
     text-align: left;
+    font-size: 40px;
+    /* width: 66%; */
 }
 
 .artistName div {
@@ -30,7 +31,6 @@ html, body {
     padding-bottom: 40vh;
 }
 
-
 section:hover {
     cursor: pointer;
 }
@@ -42,13 +42,21 @@ section img {
 }
 
 .mini {
-    /* height: 30vh; */
+    /* height: 30vh;
+    
+    max-width: 150px;
+    min-width: 66%; */
+    
+    /* margin-left: 0;
+    margin-right: auto;
+    max-height: 400px; */
+
+
+
     margin-left: 0;
     margin-right: auto;
-    max-width: 150px; 
-    min-width: 50%;
+    width: 100%;
     max-height: 400px;
-    /* tex */
 }
 
 img {
@@ -93,8 +101,6 @@ div {
     min-width: 500px; */
 }
 
-
-
 section {
     /* position: relative; */
     text-align: center;
@@ -102,12 +108,13 @@ section {
     padding-top: 1vh;
     padding-bottom: 1vh;
     overflow: hidden;
-    width: 100vw;
+    width: 100%;
     margin: 0;
     min-height: 98vh;
     max-height: 98vh;
 }
 
+@media only screen and (max-width: 1200px) {}
 
 /* 768px is a common "breakpoint" width for tablets */
 
@@ -135,7 +142,6 @@ section {
         min-width: 340px;
         max-width: 1200px;
     }
-
     #header {
         padding-top: 38vh;
         padding-bottom: 38vh;
@@ -147,7 +153,7 @@ section {
     section {
         min-height: 98vh;
         max-height: 98vh;
-        width: 100vw;
+        width: 100%;
         overflow: hidden;
     }
     section img {
@@ -155,17 +161,14 @@ section {
         margin: 0 -100% 100% 0;
         /* width: 177.777%; */
     }
-
-.mini {
-    /* height: 30vh; */
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 150px; 
-    min-width: 100%;
-    max-height: 400px;
-    /* tex */
-}
-
+    .mini {
+        /* height: 30vh; */
+        margin-left: 0;
+        margin-right: auto;
+        width: 100%;
+        max-height: 400px;
+        /* tex */
+    }
 }
 
 /* @media only screen and (max-width: 450px) {
