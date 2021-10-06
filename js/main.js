@@ -105,6 +105,8 @@ document.body.onkeyup = function (e) {
     }
 }
 
+// 1075, 767
+
 window.onkeydown = function (e) {
     if (e.keyCode == 32 && e.target == document.body) {
         e.preventDefault();

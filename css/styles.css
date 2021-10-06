@@ -209,6 +209,13 @@ h5 {
     text-align: center;
 }
 
+@media only screen and (max-width: 1075px) and (min-width: 767px) {
+    #paully {
+        font-size: 4vw;
+    }
+
+}
+
 @media only screen and (max-width: 1000px) {
     #paully {
         font-size: 4.5vw;
@@ -222,6 +229,13 @@ h5 {
         height: 50px !important;
         /* margin-right: -30vw; */
     }
+}
+
+@media only screen and (max-width: 1075px) and (min-width: 767px) {
+    #paully {
+        font-size: 4vw;
+    }
+
 }
 
 /* 768px is a common "breakpoint" width for tablets */
@@ -288,6 +302,9 @@ h5 {
         /* width: 66%; */
     }
     .links {
+        font-size: 5vw;
+    }
+    #projx {
         font-size: 5vw;
     }
     #baker {
