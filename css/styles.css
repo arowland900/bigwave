@@ -1,13 +1,10 @@
 @font-face {
     font-family: 'SwankGothic';
-    src: url('SwankGothicBold.woff2') format('woff2'),
-        url('SwankGothicBold.woff') format('woff');
+    src: url('SwankGothicBold.woff2') format('woff2'), url('SwankGothicBold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
-
-
 
 * {
     /* background-color: #272727; */
@@ -28,8 +25,20 @@
 html, body {
     max-width: 100%;
     overflow-x: hidden;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
     padding-bottom: -500px;
 }
+
+html::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+
 
 .artistName {
     color: whitesmoke;
@@ -83,6 +92,7 @@ html, body {
     padding-top: 35vh;
     padding-bottom: 35vh;
 }
+
 #blockFooter {
     width: 100px;
     max-width: 25vw;
