@@ -68,7 +68,13 @@ html, body {
 /* } */
 
 #tinyFooter {
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
+    padding-top: 35vh;
+    padding-bottom: 35vh;
+}
+#blockFooter {
+    width: 100px;
+    max-width: 25vw;
 }
 
 img:hover {
