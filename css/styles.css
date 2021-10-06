@@ -379,6 +379,9 @@ h5 {
     .info {
         font-size: 4vw;
     }
+    .artistName {
+        font-size: 0px;
+    }
 
     .mini {
         max-height: 25vh;
