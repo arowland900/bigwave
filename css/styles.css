@@ -103,7 +103,7 @@ img:hover {
 }
 
 section img {
-    height: 95vh;
+    height: 98vh;
     margin: 0 -1% 1% 0;
     width: 177.777%;
 }
@@ -186,13 +186,24 @@ section {
     text-align: center;
     max-height: 98vh;
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    /* padding-bottom: 1vh; */
     overflow: hidden;
     width: 100%;
     margin: 0;
     min-height: 98vh;
     max-height: 98vh;
 }
+
+/* #one {
+    padding-bottom: 0.5vh;
+}
+#two {
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+#three {
+    padding-top: 0.5vh;
+} */
 
 #miniProjexx, #miniPaul, #miniSteez {
     padding-top: 21vh !important;
