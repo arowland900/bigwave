@@ -376,11 +376,11 @@ h5 {
         padding-top: 0 !important;
         /* padding-bottom: 20vh !important; */
     }
-    .info {
+    /* .info {
         font-size: 4vw;
-    }
+    } */
     .artistName {
-        font-size: 0px;
+        font-size: 4vw;
     }
 
     .mini {
