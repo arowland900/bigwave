@@ -148,7 +148,6 @@ $(titleS).click(function () {
 });
 
 function fadeScroll(zone) {
-    console.log("outside: ", sections.toString())
     if (zone == '#one') {
         if (sections[1]) {
             $(fPaul).fadeOut(500)
@@ -175,7 +174,6 @@ function fadeScroll(zone) {
             $(mSteez).fadeIn(500)
         }
     } else {
-        console.log('hit: ', sections)
         if (sections[1]) {
             $(fPaul).fadeOut(500)
             $(fPaul).fadeIn(500)
