@@ -114,6 +114,48 @@ window.onkeydown = function (e) {
 };
 
 
+
+$(fProjexx).click(function () {
+    fadeScroll('#one')
+});
+$(miniP).click(function () {
+    fadeScroll('#one')
+});
+$(titleP).click(function () {
+    fadeScroll('#one')
+});
+
+$(fPaul).click(function () {
+    fadeScroll('#two')
+});
+$(miniPA).click(function () {
+    fadeScroll('#two')
+});
+$(titlePA).click(function () {
+    fadeScroll('#two')
+});
+
+$(fSteez).click(function () {
+    fadeScroll('#three')
+});
+$(miniS).click(function () {
+    fadeScroll('#three')
+});
+$(titleS).click(function () {
+    fadeScroll('#three')
+});
+
+function fadeScroll(zone) {
+    setTimeout(() => {
+
+        $('html,body').animate({
+            scrollTop: $(zone).offset().top
+        },
+            'fast');
+    }, 400)
+}
+
+
 // function init() {
 body.style.display = 'none'
 $(body).fadeIn(4000)
