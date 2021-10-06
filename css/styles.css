@@ -194,6 +194,10 @@ section {
     max-height: 98vh;
 }
 
+#miniProjexx, #miniPaul, #miniSteez {
+    padding-top: 21vh !important;
+}
+
 .links {
     color: whitesmoke;
     font-size: 45px;
