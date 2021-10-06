@@ -73,20 +73,43 @@ function fadeToggle(a, b, c) {
 let pause = true
 // $(audio).animate({volume: 0}, 0);
 document.getElementById("header").addEventListener("click", function () {
-    if(pause){
+    if (pause) {
         audio.play();
-        $(audio).animate({volume: 1}, 750);
+        $(audio).animate({ volume: 1 }, 750);
         pause = false
     } else {
-        $(audio).animate({volume: 0}, 500);
-        setTimeout(function(){
+        $(audio).animate({ volume: 0 }, 500);
+        setTimeout(function () {
 
             audio.pause();
         }, 500)
         pause = true
     }
+});
+
+document.body.onkeyup = function (e) {
+    if (e.keyCode == 32) {
+        e.preventDefault()
+        if (pause) {
+            audio.play();
+            $(audio).animate({ volume: 1 }, 750);
+            pause = false
+        } else {
+            $(audio).animate({ volume: 0 }, 500);
+            setTimeout(function () {
+
+                audio.pause();
+            }, 500)
+            pause = true
+        }
+    }
 }
-);
+
+window.onkeydown = function (e) {
+    if (e.keyCode == 32 && e.target == document.body) {
+        e.preventDefault();
+    }
+};
 
 
 // function init() {
