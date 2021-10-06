@@ -1,9 +1,20 @@
+@font-face {
+    font-family: 'SwankGothic';
+    src: url('SwankGothicBold.woff2') format('woff2'),
+        url('SwankGothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
 * {
     /* background-color: #272727; */
     background-color: black;
     /* font-family: 'EB Garamond', serif; */
     /* font-family: 'Pinyon Script', cursive; */
-    /* font-family: 'WebFont', Arial, sans-serif; */
+    font-family: 'SwankGothic', Arial, sans-serif;
     /* font-family: 'Petit Formal Script', cursive; */
     /* font-family: 'Montserrat', sans-serif; */
     /* font-family: 'Pinyon Script', cursive; */

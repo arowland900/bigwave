@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'SwankGothic';
+    src: url('SwankGothicBold.woff2') format('woff2'),
+        url('SwankGothicBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
