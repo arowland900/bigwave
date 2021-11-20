@@ -47,6 +47,13 @@ body::-webkit-scrollbar {
     display: inline;
     width: 100%;
 }
+.artistName2 {
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    display: block;
+    width: 100%;
+}
 
 .genre {
     color: whitesmoke;
@@ -54,6 +61,7 @@ body::-webkit-scrollbar {
     font-size: 40px;
     display: block;
     width: 100%;
+    /* margin-bottom: 5vh; */
 }
 
 .artistName div {
@@ -206,7 +214,7 @@ section {
 } */
 
 #miniProjexx, #miniPaul, #miniSteez {
-    padding-top: 21vh !important;
+    padding-top: 10vh !important;
 }
 
 .links {
